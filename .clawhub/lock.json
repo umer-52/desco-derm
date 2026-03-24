@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "critical-code-reviewer": {
+      "version": "0.1.0",
+      "installedAt": 1772578995754
+    },
+    "context-management": {
+      "version": "1.0.0",
+      "installedAt": 1772579019220
+    }
+  }
+}
