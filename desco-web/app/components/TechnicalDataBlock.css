@@ -1,0 +1,127 @@
+.technical-data-block {
+    background-color: var(--color-sterile-white);
+    border: 1px solid var(--color-clinical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.tdb-header {
+    background-color: var(--color-off-white);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--color-clinical-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tdb-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-medical-blue);
+}
+
+.tdb-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .tdb-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tdb-section h3 {
+    font-size: 1.125rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-off-white);
+}
+
+.efficacy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.efficacy-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--color-off-white);
+    border-radius: 4px;
+}
+
+.text-success {
+    color: var(--color-success-green);
+}
+
+.text-danger {
+    color: var(--color-emergency-red);
+}
+
+.contact-time-display {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #E3F2FD;
+    /* Light medical blue */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #BBDEFB;
+}
+
+.contact-icon {
+    color: var(--color-medical-blue);
+}
+
+.contact-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-medical-blue);
+}
+
+.contact-note {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.en-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.en-tag {
+    background-color: var(--color-medical-blue);
+    color: var(--color-sterile-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.compatibility-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #FFF3E0;
+    /* Light warning orange */
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #FFE0B2;
+}
+
+.compat-icon {
+    color: #E65100;
+    flex-shrink: 0;
+    margin-top: 2px;
+}

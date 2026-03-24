@@ -1,0 +1,125 @@
+.compliance-hero {
+    background-color: var(--color-medical-blue);
+    color: var(--color-sterile-white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.compliance-hero h1 {
+    color: var(--color-sterile-white);
+    margin-bottom: 1rem;
+}
+
+.compliance-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.compliance-content {
+    padding: 4rem 1.5rem;
+}
+
+.cert-section {
+    margin-bottom: 5rem;
+}
+
+.cert-section h2 {
+    color: var(--color-medical-blue);
+    margin-bottom: 2.5rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cert-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+.cert-card {
+    background-color: var(--color-sterile-white);
+    border: 1px solid var(--color-clinical-gray);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all var(--transition-normal);
+}
+
+.cert-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--color-medical-blue-light);
+}
+
+.cert-card-icon {
+    color: var(--color-medical-blue);
+    margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+    color: var(--color-medical-blue);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-subtitle {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.en-section h2 {
+    color: var(--color-medical-blue);
+    margin-bottom: 1rem;
+}
+
+.en-intro {
+    margin-bottom: 2rem;
+}
+
+.en-table-wrap {
+    overflow-x: auto;
+}
+
+.en-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-sterile-white);
+    border: 1px solid var(--color-clinical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.en-table th,
+.en-table td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-clinical-gray);
+}
+
+.en-table th {
+    background-color: var(--color-off-white);
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+
+.en-code {
+    font-weight: 600;
+    color: var(--color-medical-blue);
+    white-space: nowrap;
+}
+
+.en-table tr:last-child td {
+    border-bottom: none;
+}
+
+.en-table tr:hover {
+    background-color: var(--color-off-white);
+}

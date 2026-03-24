@@ -1,0 +1,592 @@
+/* ═══════════════════════════════════════════
+   HOMEPAGE STYLES
+   ═══════════════════════════════════════════ */
+
+/* ── Hero Section ── */
+.hero-section {
+    position: relative;
+    color: var(--color-sterile-white);
+    padding: 6rem 0;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg-image-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(10, 66, 115, 0.88) 0%,
+            rgba(26, 90, 149, 0.75) 50%,
+            rgba(10, 66, 115, 0.85) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-text {
+    max-width: 750px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.25rem;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-title {
+    color: var(--color-sterile-white);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 580px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    border-radius: 6px;
+}
+
+.btn-outline.text-white {
+    color: var(--color-sterile-white);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+.btn-outline.text-white:hover {
+    background-color: var(--color-sterile-white);
+    color: var(--color-medical-blue);
+    border-color: var(--color-sterile-white);
+}
+
+/* ── Trust Signals ── */
+.trust-section {
+    padding: 4.5rem 0;
+    border-bottom: 1px solid var(--color-clinical-gray);
+    background-color: var(--color-sterile-white);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.trust-item {
+    padding: 2rem 1.5rem;
+}
+
+.trust-icon-wrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    color: var(--color-medical-blue);
+    transition: transform var(--transition-normal);
+}
+
+.trust-item:hover .trust-icon-wrapper {
+    transform: scale(1.08);
+}
+
+.trust-item h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-dark);
+    font-size: 1.25rem;
+}
+
+.trust-item p {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* ══════════════════════════════════════════════
+   FEATURED PRODUCT SHOWCASE — Catalog-style
+   ══════════════════════════════════════════════ */
+.showcase-section {
+    padding: 6rem 0;
+    background-color: var(--color-off-white);
+}
+
+.showcase-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.showcase-header h2 {
+    color: var(--color-medical-blue);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.showcase-header p {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .showcase-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ── Card — Horizontal split (mirrors ProductCard) ── */
+.showcase-card {
+    background-color: var(--color-sterile-white);
+    border: 1px solid var(--color-clinical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-normal);
+    height: 100%;
+}
+
+.showcase-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-medical-blue-light);
+    transform: translateY(-4px);
+}
+
+/* Header row: category label + efficacy badge */
+.showcase-card-header {
+    padding: 1rem 1.5rem;
+    background-color: var(--color-off-white);
+    border-bottom: 1px solid var(--color-clinical-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.showcase-category-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--color-medical-blue);
+}
+
+.showcase-efficacy-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+/* Body: text left, image right (split layout) */
+.showcase-card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.showcase-card-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.showcase-product-name {
+    color: var(--color-medical-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.showcase-tagline {
+    font-size: 0.9375rem;
+    margin-bottom: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* Feature badges (green checkmarks) */
+.showcase-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.showcase-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-dark);
+}
+
+.showcase-feature-icon {
+    color: var(--color-success-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Product thumbnail — right-aligned */
+.showcase-card-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: transform var(--transition-normal);
+}
+
+.showcase-card:hover .showcase-thumbnail {
+    transform: scale(1.06);
+}
+
+/* Footer with CTA link */
+.showcase-card-footer {
+    padding: 1.25rem 1.5rem;
+    border-top: 1px solid var(--color-clinical-gray);
+    background-color: var(--color-sterile-white);
+}
+
+.showcase-view-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-medical-blue);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+    font-size: 0.9375rem;
+}
+
+.showcase-view-link:hover {
+    color: var(--color-medical-blue-light);
+}
+
+.showcase-view-link svg {
+    transition: transform var(--transition-fast);
+}
+
+.showcase-view-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Catalog CTA ── */
+.catalog-cta {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.catalog-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0A4273, #1A5A95);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(10, 66, 115, 0.35);
+    transition: all var(--transition-normal);
+}
+
+.catalog-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(10, 66, 115, 0.45);
+    background: linear-gradient(135deg, #1A5A95, #0A4273);
+}
+
+/* ══════════════════════════════════════════════
+   PROFESSIONAL SOLUTION COLLECTIONS
+   ══════════════════════════════════════════════ */
+.collections-section {
+    padding: 6rem 0;
+    background-color: var(--color-sterile-white);
+}
+
+.collections-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.collections-header h2 {
+    color: var(--color-medical-blue);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.collections-header p {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-collections-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .home-collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.home-collection-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 320px;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-collection-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.home-collection-card-image {
+    position: absolute;
+    inset: 0;
+}
+
+.home-collection-img {
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.home-collection-card:hover .home-collection-img {
+    transform: scale(1.05);
+}
+
+.home-collection-card-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.home-collection-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    color: #fff;
+}
+
+.home-collection-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.home-collection-desc {
+    font-size: 0.9375rem;
+    opacity: 0.92;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.home-collection-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: #fff;
+    transition: gap var(--transition-fast);
+}
+
+.home-collection-card:hover .home-collection-cta {
+    gap: 0.875rem;
+}
+
+/* ══════════════════════════════════════════════
+   DOCUMENTATION SECTION
+   ══════════════════════════════════════════════ */
+.documentation-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #F0F4F8 0%, #E8EEF4 100%);
+    border-top: 1px solid var(--color-clinical-gray);
+}
+
+.documentation-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.documentation-text {
+    max-width: 580px;
+}
+
+.documentation-icon {
+    color: var(--color-medical-blue);
+    margin-bottom: 1rem;
+}
+
+.documentation-text h2 {
+    color: var(--color-medical-blue);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.documentation-text p {
+    color: var(--color-text-light);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.documentation-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.125rem 2.5rem;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0A4273, #1A5A95);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(10, 66, 115, 0.35);
+    transition: all var(--transition-normal);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.documentation-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(10, 66, 115, 0.45);
+    background: linear-gradient(135deg, #1A5A95, #0A4273);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .hero-section {
+        min-height: 70vh;
+        padding: 4rem 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.0625rem;
+    }
+
+    .showcase-header h2,
+    .collections-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Stack product card body on mobile */
+    .showcase-card-body {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .showcase-card-image {
+        width: 100%;
+        height: 120px;
+    }
+
+    .showcase-thumbnail {
+        height: 120px;
+    }
+
+    /* Documentation section stacks */
+    .documentation-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .documentation-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

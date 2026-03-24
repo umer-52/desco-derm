@@ -1,0 +1,142 @@
+.product-card {
+    background-color: var(--color-sterile-white);
+    border: 1px solid var(--color-clinical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-normal);
+    height: 100%;
+}
+
+.product-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-medical-blue-light);
+    transform: translateY(-4px);
+}
+
+.product-card-header {
+    padding: 1rem 1.5rem;
+    background-color: var(--color-off-white);
+    border-bottom: 1px solid var(--color-clinical-gray);
+}
+
+.product-category-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--color-medical-blue);
+}
+
+/* ── Split-layout body: text left, image right ── */
+.product-card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.product-card-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-title {
+    color: var(--color-medical-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.product-desc {
+    font-size: 0.9375rem;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-dark);
+}
+
+.feature-icon {
+    color: var(--color-success-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── Product thumbnail ── */
+.product-card-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+/* ── Footer ── */
+.product-card-footer {
+    padding: 1.25rem 1.5rem;
+    border-top: 1px solid var(--color-clinical-gray);
+    background-color: var(--color-sterile-white);
+}
+
+.view-details-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-medical-blue);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.view-details-link:hover {
+    color: var(--color-medical-blue-light);
+}
+
+.view-details-link svg {
+    transition: transform var(--transition-fast);
+}
+
+.view-details-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* ── Responsive: stack on small screens ── */
+@media (max-width: 480px) {
+    .product-card-body {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .product-card-image {
+        width: 100%;
+        height: 120px;
+    }
+
+    .product-thumbnail {
+        height: 120px;
+    }
+}
