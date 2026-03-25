@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { publicAsset } from "@/lib/assetPath";
 import { collections } from "../data";
 import { ArrowRight } from "lucide-react";
 import "./products.css";
@@ -27,7 +28,7 @@ export default function ProductsPage() {
                         >
                             <div className="collection-card-image">
                                 <Image
-                                    src={collection.image}
+                                    src={publicAsset(collection.image)}
                                     alt={collection.name}
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"

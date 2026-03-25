@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { publicAsset } from "@/lib/assetPath";
 import { MapPin, Phone, Mail, Send, Download } from "lucide-react";
 import "./contact.css";
 
@@ -71,7 +72,7 @@ export default function ContactPage() {
                                 <h3>Request Technical Datasheet</h3>
                                 <p>Download detailed product specifications and compliance data.</p>
                                 <a
-                                    href="/DESCO Disinfectant.pdf"
+                                    href={publicAsset("/DESCO Disinfectant.pdf")}
                                     download
                                     className="btn-download-pdf"
                                 >

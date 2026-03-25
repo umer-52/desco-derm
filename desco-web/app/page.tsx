@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ShieldCheck, Microscope, Hospital, Download, FileText } from "lucide-react";
+import { publicAsset } from "@/lib/assetPath";
 import { collections } from "./data";
 import "./page.css";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-bg-image-wrapper">
           <Image
-            src="/cleanroom-hero.png"
+            src={publicAsset("/cleanroom-hero.png")}
             alt="Clinical cleanroom environment"
             fill
             priority
@@ -89,7 +90,7 @@ export default function Home() {
               >
                 <div className="home-collection-card-image">
                   <Image
-                    src={collection.image}
+                    src={publicAsset(collection.image)}
                     alt={collection.name}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -127,7 +128,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href="/DESCO Disinfectant.pdf"
+              href={publicAsset("/DESCO Disinfectant.pdf")}
               download
               className="btn btn-primary btn-lg documentation-download-btn"
             >

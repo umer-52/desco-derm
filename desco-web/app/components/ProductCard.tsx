@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { publicAsset } from "@/lib/assetPath";
 import { Product } from "../data";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import "./ProductCard.css";
@@ -36,7 +37,7 @@ export default function ProductCard({ product }: { product: Product }) {
                 </div>
                 <div className="product-card-image">
                     <Image
-                        src={product.image}
+                        src={publicAsset(product.image)}
                         alt={product.name}
                         width={120}
                         height={150}

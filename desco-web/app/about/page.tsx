@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/assetPath";
 import { Factory, FlaskConical, Search, Palette, ShieldCheck, Award, FileCheck } from "lucide-react";
 import "./about.css";
 
@@ -15,7 +16,7 @@ export default function AboutPage() {
             <section className="about-hero">
                 <div className="about-hero-image-wrapper">
                     <Image
-                        src="/city-skyline-hero.png"
+                        src={publicAsset("/city-skyline-hero.png")}
                         alt="City skyline representing DESCO's global reach"
                         fill
                         priority

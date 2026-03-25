@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { publicAsset } from "@/lib/assetPath";
 import { ArrowLeft, CheckCircle2, FlaskConical, Package, Microscope } from "lucide-react";
 import { products, collections } from "../../data";
 import "./product-detail.css";
@@ -57,7 +58,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                     <div className="pdp-image-col">
                         <div className="pdp-image-wrapper">
                             <Image
-                                src={product.image}
+                                src={publicAsset(product.image)}
                                 alt={product.name}
                                 width={520}
                                 height={700}
