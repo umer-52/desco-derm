@@ -127,7 +127,7 @@ export const products: Product[] = [
       { unit: "5 L", piecesInBox: 4 },
       { unit: "Pouch 1L", piecesInBox: 10 },
     ],
-    image: "/products/desco-derm.png",
+    image: "/products/desco-derm.jpeg",
   },
   {
     id: "desco-hex",
@@ -165,7 +165,7 @@ export const products: Product[] = [
       { unit: "500 ml", piecesInBox: 20 },
       { unit: "1 L", piecesInBox: 12 },
     ],
-    image: "/products/desco-hex.png",
+    image: "/products/desco-hex.jpeg",
   },
   {
     id: "desco-hex-hexiprep",
@@ -205,7 +205,7 @@ export const products: Product[] = [
       { unit: "120 ml", piecesInBox: 30 },
       { unit: "1 L", piecesInBox: 12 },
     ],
-    image: "/products/desco-hex-hexiprep.png",
+    image: "/products/desco-hex-hexiprep.jpeg",
   },
 
   // ─────────────────────────────────────────
@@ -248,7 +248,7 @@ export const products: Product[] = [
       { unit: "120 ml", piecesInBox: 20 },
       { unit: "60 ml", piecesInBox: 40 },
     ],
-    image: "/products/rapidine.png",
+    image: "/products/rapidine.jpg.jpeg",
   },
 
   // ─────────────────────────────────────────
@@ -292,7 +292,7 @@ export const products: Product[] = [
       { unit: "5 L", piecesInBox: 4 },
       { unit: "250 ml", piecesInBox: 40 },
     ],
-    image: "/products/desco-san.png",
+    image: "/products/desco-san.jpeg",
   },
 
   // ─────────────────────────────────────────
@@ -334,7 +334,7 @@ export const products: Product[] = [
       { unit: "1 L", piecesInBox: 20 },
       { unit: "5 L", piecesInBox: 4 },
     ],
-    image: "/products/desco-sept-af.png",
+    image: "/products/desco-sept-af.jpeg",
   },
 
   // ─────────────────────────────────────────
@@ -378,7 +378,7 @@ export const products: Product[] = [
       { unit: "5 L", piecesInBox: 4 },
       { unit: "200 ML", piecesInBox: 30 },
     ],
-    image: "/products/desco-sed.png",
+    image: "/products/desco-sed.jpeg",
   },
   {
     id: "desco-forte",
