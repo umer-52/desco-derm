@@ -336,6 +336,48 @@ export const products: Product[] = [
     ],
     image: "/products/desco-sept-af.jpeg",
   },
+  {
+    id: "chlor-tab",
+    name: "CHLOR-TAB",
+    subtitle: "Effervescent Chlorine Tablets With or Without Detergent",
+    category: "Floor and Surface Disinfection",
+    categoryColor: "#E6A817",
+    shortDescription: "Fast dissolving, highly convenient, safer and more accurate alternative to liquid bleach.",
+    description: "Since many authorities have banned the use of bleach, NaDCC powders and tablets predominate the favoured method of chlorine disinfection. One of the greatest offenders involved in accidents is liquid bleach, or sodium hypochlorite (NaOCl). Sanitab prevents any accidents happening. Its safe screw cap tub houses the tablets for up to five years. These small, white tablets are based on a dry chlorine donor, troclosene sodium (NaDCC), which is blended with effervescent components before being formed into tablets. The result is a fast dissolving, highly convenient, safer and more accurate alternative to liquid bleach. NaDCC is well established in the cleaning industry for both hospital and janitorial applications.\n\nSafety Warnings: Harmful if swallowed. Contact with acids liberates toxic gas. Irritating to eyes and respiratory system. Very toxic to aquatic organisms, may cause long term adverse effects in aquatic environment. Keep container dry. Keep out of reach of children.",
+    keyFeatures: [
+      "Effective against Spores, Mycobacteria, Viruses, Bacteria and Fungi",
+      "Fast dissolving and highly convenient alternative to liquid bleach",
+      "Safe screw cap tub houses tablets for up to five years",
+      "Based on dry chlorine donor, troclosene sodium (NaDCC)",
+      "1.7g tablet size"
+    ],
+    composition: "Active Ingredient: Troclosene Sodium (NaDCC)",
+    efficacy: {
+      bactericidal: true,
+      fungicidal: true,
+      virucidal: true,
+      tuberculocidal: true,
+      sporicidal: true
+    },
+    enStandards: ["EN 13727", "EN 13624", "EN 14476", "EN 17126"],
+    contactTime: "2 min - 1 hour (depending on application)",
+    materialCompatibility: "Well established in the cleaning industry for both hospital and janitorial applications.",
+    pathogens: ["Spores", "Mycobacteria", "Viruses", "Bacteria", "Fungi"],
+    microbiologicalActivity: [
+      { activity: "Body fluid spills", concentration: "10,000ppm (10 tabs/1L)", effectTime: "Min 2 minutes contact time" },
+      { activity: "Laboratory discard jars", concentration: "2,500ppm (5 tabs/2L)", effectTime: "Soak overnight" },
+      { activity: "General disinfection", concentration: "1,000ppm (1 tab/1L)", effectTime: "15 minutes contact time" },
+      { activity: "Stainless steel instruments", concentration: "600ppm (3 tabs/5L)", effectTime: "Immerse for 1 hour" },
+      { activity: "WC's, drains, sinks", concentration: "400ppm (1 tab/2.5L)", effectTime: "Pour in at quiet periods" },
+      { activity: "Food prep surfaces, floors, tiles", concentration: "200ppm (1 tab/5L)", effectTime: "Soak for 3 mins and air dry" },
+      { activity: "Dishcloths, mops, etc.", concentration: "60ppm (1 tab/16L)", applicationRange: "Soak to bleach clean and deodorise. Do not soak overnight." }
+    ],
+    packaging: [
+      { unit: "100 Tub (1.7g tablet)", piecesInBox: 1 },
+      { unit: "200 Tub (1.7g tablet)", piecesInBox: 1 }
+    ],
+    image: "/products/chlor-tab.jpeg",
+  },
 
   // ─────────────────────────────────────────
   // E. ENDOSCOPE AND MEDICAL DEVICE DISINFECTANTS
