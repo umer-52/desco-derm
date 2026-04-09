@@ -18,6 +18,7 @@ export default function Footer() {
                         <span className="cert-badge"><ShieldCheck size={16} /> ISO 9001:2015</span>
                         <span className="cert-badge"><ShieldCheck size={16} /> ISO 14001:2015</span>
                         <span className="cert-badge"><ShieldCheck size={16} /> ISO 45001:2018</span>
+                        <span className="cert-badge"><ShieldCheck size={16} /> ISO 13485:2016</span>
                         <span className="cert-badge"><ShieldCheck size={16} /> DRAP Approved</span>
                     </div>
                 </div>
@@ -35,9 +36,9 @@ export default function Footer() {
                 <div className="footer-section">
                     <h3 className="footer-title">Contact Us</h3>
                     <ul className="footer-contact-list">
-                        <li><MapPin size={18} /> HMB International, Lahore, Pakistan</li>
+                        <li><MapPin size={18} /> HMB International, Karachi, Pakistan</li>
                         <li><Phone size={18} /> +92-333-1361933</li>
-                        <li><Phone size={18} /> +92-45-2361933</li>
+                        <li><Phone size={18} /> +92-345-2361933</li>
                         <li><Mail size={18} /> info.hmbinternational@gmail.com</li>
                     </ul>
                 </div>

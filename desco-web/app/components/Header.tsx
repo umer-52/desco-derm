@@ -25,7 +25,7 @@ export default function Header() {
                         <span className="emergency-badge">
                             <ShieldAlert size={16} /> ISO 13485:2016 Certified
                         </span>
-                        <a href="tel:+924235876000">Support: +92 42 3587 6000</a>
+                        <a href="tel:+924235876000">Support: +92-345-2361933</a>
                     </div>
                 </div>
             </div>
