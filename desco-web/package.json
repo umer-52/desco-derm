@@ -1,7 +1,7 @@
 {
   "name": "desco-web",
   "version": "0.1.0",
-  "homepage": "https://umer-52.github.io/desco-derm",
+  "homepage": "https://www.descoantiseptics.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
