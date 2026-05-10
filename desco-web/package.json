@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "cross-env DEPLOY_TARGET=gh-pages npm run build && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",

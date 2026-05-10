@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
-const isGitHubPages = process.env.DEPLOY_TARGET === "gh-pages";
-const basePath = isGitHubPages ? "/desco-derm" : "";
+const basePath = "";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
