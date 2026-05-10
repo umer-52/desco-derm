@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "cross-env DEPLOY_TARGET=gh-pages npm run build && gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
@@ -22,6 +21,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "typescript": "^5"
