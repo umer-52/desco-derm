@@ -286,7 +286,7 @@ export const products: Product[] = [
       { activity: "Fungicidal", organisms: "C. albicans, A. brasiliensis", concentration: "1%", effectTime: "15 min." },
       { activity: "Tuberculocidal / Mycobactericidal", concentration: "1%", effectTime: "15 min." },
       { activity: "Virucidal", organisms: "Adeno, Polio, MNV", concentration: "1%", effectTime: "15 min." },
-      { activity: "Sporicidal", concentration: "1%", effectTime: "15 min." },
+      { activity: "Sporicidal", concentration: "5%", effectTime: "15 min." },
     ],
     packaging: [
       { unit: "1 L", piecesInBox: 12 },
@@ -415,7 +415,7 @@ export const products: Product[] = [
       { activity: "Fungicidal", organisms: "C. albicans, A. brasiliensis", concentration: "3%", effectTime: "15 min." },
       { activity: "Tuberculocidal / Mycobactericidal", concentration: "3%", effectTime: "15 min." },
       { activity: "Virucidal", organisms: "Adeno, Polio, MNV", concentration: "3%", effectTime: "15 min." },
-      { activity: "Sporicidal", concentration: "3%", effectTime: "15 min." },
+      { activity: "Sporicidal", concentration: "5%", effectTime: "15 min." },
     ],
     packaging: [
       { unit: "1 L", piecesInBox: 12 },
