@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Search, Menu, X, ShieldAlert } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 import "./Header.css";
 
 export default function Header() {
@@ -18,17 +18,6 @@ export default function Header() {
 
     return (
         <header className="header">
-            <div className="header-top">
-                <div className="container header-top-content">
-                    <span>HMB International | Quality Hygiene Solutions</span>
-                    <div className="header-contact">
-                        <span className="emergency-badge">
-                            <ShieldAlert size={16} /> ISO 13485:2016 Certified
-                        </span>
-                        <a href="tel:+924235876000">Support: +92-345-2361933</a>
-                    </div>
-                </div>
-            </div>
 
             <div className="header-main">
                 <div className="container header-main-content">
